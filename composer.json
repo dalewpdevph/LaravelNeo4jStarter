@@ -1,0 +1,21 @@
+{
+    "name": "dalewpdevph/laravel-neo4j-starter",
+    "description": "This is starter package for laravel that uses the neo4j database.",
+    "type": "library",
+    "version": "1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Precious Dale Ramirez",
+            "email": "dalefirstpage@gmail.com"
+        }
+    ],
+    "require": {
+        "heydavid713/neo4jphp": "0.1.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "dalewpdevph\\LaravelNeo4jStarter\\": "src/"
+        }
+    }
+}
