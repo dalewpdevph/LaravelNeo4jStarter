@@ -19,7 +19,7 @@ Add the package to your `composer.json` and run `composer update`.
 ```json
 {
     "require": {
-        "dalewpdevph/LaravelNeo4jStarter": "dev-master"
+        "dalewpdevph/laravel-neo4j-starter": "dev-master"
     }
 }
 ```
