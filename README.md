@@ -49,6 +49,18 @@ NEO4J_USERNAME=neo4j
 NEO4J_PASSWORD=neo4j
 ```
 
+On your application root open config/auth.php and change the providers values with the one below.
+
+```
+    'providers' => [
+        'users' => [
+            'driver' => 'neo4jauth',
+            'model' => dalewpdevph\LaravelNeo4jStarter\Models\User::class,
+        ],
+    ],
+```
+
+
 ## Password Resets
 
 Open your app/Http/Controllers/Auth/ForgotPasswordController.php and app/Http/Controllers/Auth/RegisterController.php 
