@@ -22,14 +22,5 @@ class PasswordBrokerManager extends BasePasswordBrokerManager
 		}
 
 		return new Neo4jTokenRepository($this->app['hash'],	$config['table'],	$key,	$config['expire']);
-		//$connection = isset($config['connection']) ? $config['connection'] : null;
-
-		return new DatabaseTokenRepository(
-			$this->app['db']->connection($connection),
-			$this->app['hash'],
-			$config['table'],
-			$key,
-			$config['expire']
-		);
 	}
 }
