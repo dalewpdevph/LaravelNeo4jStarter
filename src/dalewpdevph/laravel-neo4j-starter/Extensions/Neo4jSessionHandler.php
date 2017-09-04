@@ -152,7 +152,6 @@ class Neo4jSessionHandler implements SessionHandlerInterface, ExistenceAwareInte
 		if ($result->count())
 		{
 			$node = $result[0]['node'];
-		//	dd($node->getProperties());
 		}
 	}
 

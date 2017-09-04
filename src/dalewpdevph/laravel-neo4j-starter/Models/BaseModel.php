@@ -209,6 +209,8 @@ abstract class BaseModel
 
 	public static function find($id)
 	{
+		$id = (int) $id;
+
 		return static::findByAttribute('id', $id);
 	}
 
