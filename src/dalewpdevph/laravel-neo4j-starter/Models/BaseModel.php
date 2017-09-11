@@ -148,6 +148,16 @@ abstract class BaseModel
 	{
 		$save = new $this;
 
+		$attributes = $this->getAttributes();
+
+		/**
+		 * This ensures that any model passed with ID attribute updates the node instead of creating new one.
+		 */
+		if (!empty($attributes['id']))
+		{
+			$this->exists = true;
+		}
+
 		if($this->exists)
 		{
 			$queryString = $this->getUpdateQuery();
@@ -157,7 +167,7 @@ abstract class BaseModel
 			$queryString = $this->getSaveQuery();
 		}
 
-		$attributes = $this->getAttributes();
+
 
 		if ($transaction)
 		{
