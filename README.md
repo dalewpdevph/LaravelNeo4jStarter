@@ -19,21 +19,21 @@ Add the package to your `composer.json` and run `composer update`.
 ```json
 {
     "require": {
-        "dalewpdevph/laravel-neo4j-starter": "dev-master"
+        "pdaleramirez/laravel-neo4j-starter": "dev-master"
     }
 }
 ```
 Add the service provider in `app/config/app.php`:
 
 ```php
-dalewpdevph\LaravelNeo4jStarter\Providers\Neo4jServiceProvider::class,
+pdaleramirez\LaravelNeo4jStarter\Providers\Neo4jServiceProvider::class,
 ```
 The service provider will register all the required classes for Laravel Neo4j Starter package.
   
 Add the required facades in `app/config/app.php`:
 
 ```php
-'Neo4jQuery' 	  => dalewpdevph\LaravelNeo4jStarter\Facades\Neo4jQueryFacade::class
+'Neo4jQuery' 	  => pdaleramirez\LaravelNeo4jStarter\Facades\Neo4jQueryFacade::class
 ```
 
 ## Configuration
@@ -55,7 +55,7 @@ On your application root open config/auth.php and change the providers values wi
     'providers' => [
         'users' => [
             'driver' => 'neo4jauth',
-            'model' => dalewpdevph\LaravelNeo4jStarter\Models\User::class,
+            'model' => pdaleramirez\LaravelNeo4jStarter\Models\User::class,
         ],
     ],
 ```

@@ -1,8 +1,8 @@
 <?php
 
-namespace dalewpdevph\LaravelNeo4jStarter\Passwords;
+namespace pdaleramirez\LaravelNeo4jStarter\Passwords;
 
-use dalewpdevph\LaravelNeo4jStarter\Models\TokenPassword;
+use pdaleramirez\LaravelNeo4jStarter\Models\TokenPassword;
 use Illuminate\Auth\Passwords\TokenRepositoryInterface;
 use Carbon\Carbon;
 use Illuminate\Support\Str;

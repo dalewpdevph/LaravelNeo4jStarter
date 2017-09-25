@@ -1,6 +1,6 @@
 <?php
 
-namespace dalewpdevph\LaravelNeo4jStarter\Services;
+namespace pdaleramirez\LaravelNeo4jStarter\Services;
 
 class Neo4jQueryService
 {

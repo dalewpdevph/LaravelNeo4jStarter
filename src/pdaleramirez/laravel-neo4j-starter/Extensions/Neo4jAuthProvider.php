@@ -1,6 +1,6 @@
-<?php namespace dalewpdevph\LaravelNeo4jStarter\Extensions;
+<?php namespace pdaleramirez\LaravelNeo4jStarter\Extensions;
 
-use dalewpdevph\LaravelNeo4jStarter\Models\User;
+use pdaleramirez\LaravelNeo4jStarter\Models\User;
 use Illuminate\Contracts\Auth\UserProvider;
 use Illuminate\Contracts\Hashing\Hasher as HasherContract;
 use Illuminate\Contracts\Auth\Authenticatable as UserContract;
@@ -126,7 +126,7 @@ class Neo4jAuthProvider implements UserProvider {
 	/**
 	 * Create a new instance of the model.
 	 *
-	 * @return \dalewpdevph\LaravelNeo4jStarter\Models\User
+	 * @return \pdaleramirez\LaravelNeo4jStarter\Models\User
 	 */
 	public function createModel()
 	{

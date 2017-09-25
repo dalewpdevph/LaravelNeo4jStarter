@@ -1,6 +1,6 @@
 <?php
 
-namespace dalewpdevph\LaravelNeo4jStarter\Passwords;
+namespace pdaleramirez\LaravelNeo4jStarter\Passwords;
 
 use Illuminate\Auth\Passwords\PasswordBrokerManager as BasePasswordBrokerManager;
 use Illuminate\Support\Str;

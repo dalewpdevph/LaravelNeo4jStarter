@@ -1,9 +1,9 @@
 <?php
 
-namespace dalewpdevph\LaravelNeo4jStarter\Models;
+namespace pdaleramirez\LaravelNeo4jStarter\Models;
 
 use Everyman\Neo4j\Node;
-use dalewpdevph\LaravelNeo4jStarter\Traits\QueryAble;
+use pdaleramirez\LaravelNeo4jStarter\Traits\QueryAble;
 
 abstract class BaseModel
 {

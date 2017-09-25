@@ -1,6 +1,6 @@
 <?php
 
-namespace dalewpdevph\LaravelNeo4jStarter\Traits;
+namespace pdaleramirez\LaravelNeo4jStarter\Traits;
 
 trait QueryAble
 {

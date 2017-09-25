@@ -1,5 +1,5 @@
 <?php
-namespace dalewpdevph\LaravelNeo4jStarter\Models;
+namespace pdaleramirez\LaravelNeo4jStarter\Models;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Auth\Passwords\CanResetPassword;

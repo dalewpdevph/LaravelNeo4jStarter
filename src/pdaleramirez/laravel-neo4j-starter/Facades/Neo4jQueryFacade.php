@@ -1,4 +1,4 @@
-<?php namespace dalewpdevph\LaravelNeo4jStarter\Facades;
+<?php namespace pdaleramirez\LaravelNeo4jStarter\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

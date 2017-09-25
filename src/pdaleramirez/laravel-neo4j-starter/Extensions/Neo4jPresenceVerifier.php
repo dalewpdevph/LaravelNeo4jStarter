@@ -1,6 +1,6 @@
 <?php
 
-namespace dalewpdevph\LaravelNeo4jStarter\Extensions;
+namespace pdaleramirez\LaravelNeo4jStarter\Extensions;
 
 use Illuminate\Validation\PresenceVerifierInterface;
 
