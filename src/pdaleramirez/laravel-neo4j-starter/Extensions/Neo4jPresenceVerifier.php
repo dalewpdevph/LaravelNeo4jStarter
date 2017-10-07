@@ -21,8 +21,17 @@ class Neo4jPresenceVerifier implements PresenceVerifierInterface
 	    $exs = 'AND n.id <> {xid}';
 	  }
 
-	  $queryString = "MATCH (n:" . $collection . ")
-				WHERE n." . $column . " = {value} " . $exs . "
+	  $statusMatch = '';
+	  $statusQuery = '';
+
+		if (isset($extra['status']))
+		{
+			$statusMatch = "<-[:STATUS_OF]-(status)";
+			$statusQuery = "AND status.value <> '" . $extra['status'] . "'";
+		}
+
+	  $queryString = "MATCH (n:" . $collection . ")$statusMatch
+				WHERE n." . $column . " = {value} " . $exs . " $statusQuery
 				RETURN n";
 
 		$result = \Neo4jQuery::getResultSet($queryString, array('value' => $value, 'xid' => $excludeId));
